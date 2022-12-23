@@ -620,7 +620,17 @@ margin-right: 40px;
 
 
     background: var(--footer-text);
+    fill: #000000;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+
+    transition: background-color var(--anim-time-and-func), fill var(--anim-time-and-func);
+}
+
+.modal-btn:hover,
+.modal-btn:focus,
+.modal-btn:active {
+    background: var(--background-active-order-service);
+    fill: var(--main-white);
 }
